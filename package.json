@@ -1,0 +1,53 @@
+{
+  "name": "quickdart",
+  "displayName": "QuickDart",
+  "description": "Run dart files instantly from Visual Studio Code",
+  "icon": "quickdart.png",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.101.0"
+  },
+  "publisher": "birukbelihu",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/birukbelihu/quickdart.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "quickdart.run",
+        "title": "Run Dart File With QuickDart"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "quickdart.run",
+          "when": "editorTextFocus && editorLangId == 'dart'",
+          "group": "navigation"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.101.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.5.2",
+    "eslint": "^9.25.1"
+  },
+  "dependencies": {
+    "which": "^5.0.0"
+  }
+}
