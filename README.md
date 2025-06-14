@@ -2,6 +2,8 @@
 
 Quickdart Is A Simple But Useful Extesnsion For Visual Studio Code That Helps Developers To Run Dart Files Easily In VSCode.
 
+[![QuickDart](https://img.shields.io/visual-studio-marketplace/v/birukbelihu.quickdart)](https://marketplace.visualstudio.com/items?itemName=birukbelihu.quickdart)
+
 ### 1.0.0
 
 Initial release of QuickDart
